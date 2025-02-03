@@ -1,0 +1,22 @@
+series 20,60,104,152,...
+import java.util.*;
+public class Main{
+public static void main(String[] args){
+Scanner s=new Scanner(System.in);
+int n=nextInt();
+    int c=40,b=4;
+    int sum=20,z;
+    if(n==1){
+        printf("%d",sum);
+    }
+    else{
+      printf("%d",sum);
+      sum+=c;
+      printf(" %d",sum);
+        for(int i=3;i<=n;i++){
+            z=b*(i-2);
+            sum+=c+z;
+            printf(" %d",sum);
+        }
+    }
+}
